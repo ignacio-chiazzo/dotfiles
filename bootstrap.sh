@@ -9,3 +9,6 @@ echo
 # Install Oh My Zsh
 echo "--- Installing OhMyZsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+ln -sf ~/dotfiles/configs/.aliases ~/.aliases
+echo "--- ~/dotfiles/configs/.aliases -> ~/.aliases"
