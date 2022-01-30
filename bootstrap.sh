@@ -25,5 +25,3 @@ echo "--- ~/dotfiles/configs/.aliases -> ~/.aliases"
 ln -sf ~/dotfiles/.zlogin ~/.zlogin
 echo "--- ~/dotfiles/.zlogin -> ~/.zlogin"
 
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
-echo "--- ~/dotfiles/.zshrc -> ~/.zshrc"
