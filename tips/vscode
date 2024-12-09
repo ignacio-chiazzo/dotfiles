@@ -1,0 +1,27 @@
+
+#### Override cursor vs-code conflict shortcuts
+
+
+`cmd + shift + p > Preferences: Open Keyboard Shortcuts (JSON)` and copy and paste the following
+````
+ {
+    "key": "shift+cmd+k",
+    "command": "cursorai.action.generateInTerminal",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "cmd+k",
+    "command": "-cursorai.action.generateInTerminal",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "cmd+k",
+    "command": "composer.startComposerPrompt",
+    "when": "composerIsEnabled && !terminalFocus"
+  },
+  {
+    "key": "cmd+k",
+    "command": "-composer.startComposerPrompt",
+    "when": "composerIsEnabled"
+  }
+```
